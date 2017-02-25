@@ -21,7 +21,7 @@ class Bus implements BusInterface
     /**
      * @inheritdoc
      */
-    public function execute($request = null)
+    public function execute($request)
     {
         $class = get_class($request);
         if (!isset($this->registry[$class])) {
